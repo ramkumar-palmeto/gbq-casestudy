@@ -1,0 +1,10 @@
+unique_name: state_map_row_security
+object_type: row_security
+label: state_map_row_security
+dataset: state_map
+filter_key_column: state
+id_type: user
+ids_column: username
+scope: all
+secure_totals: true
+use_filter_key: true

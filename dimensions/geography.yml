@@ -68,5 +68,15 @@ level_attributes:
     key_columns:
       - locationid
     name_column: city
-
+relationships:
+  - unique_name: vwlocations_state_to_state_map_row_security
+    from:
+      dataset: vwlocations
+      hierarchy: Geography
+      join_columns:
+        - state
+      level: country
+    to:
+      row_security: state_map_row_security
+    type: embedded
 type: standard
