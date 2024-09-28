@@ -57,7 +57,7 @@ level_attributes:
     is_unique_key: false
     key_columns:
       - customerid
-    name_column: customerid
+    name_column: fullname
 relationships:
   - unique_name: vwcustomers_locationid_to_geography_city
     from:
