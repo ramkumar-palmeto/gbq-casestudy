@@ -1,0 +1,26 @@
+unique_name: vwcustomers
+object_type: dataset
+label: vwcustomers
+columns:
+  - name: customerid
+    data_type: int
+  - name: fullname
+    data_type: string
+  - name: firstname
+    data_type: string
+  - name: middlename
+    data_type: string
+  - name: lastname
+    data_type: string
+  - name: locationid
+    data_type: int
+  - name: creditlimit
+    data_type: int
+  - name: activestatus
+    data_type: boolean
+  - name: customerstatus
+    data_type: string
+  - name: customertype
+    data_type: string
+connection_id: con_postgres_public
+table: vwcustomers

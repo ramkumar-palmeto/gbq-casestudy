@@ -1,0 +1,6 @@
+unique_name: GBQ Case Study v10
+object_type: catalog
+label: GBQ Case Study v10
+aggressive_agg_promotion: false
+as_version: 1
+build_speculative_aggs: true

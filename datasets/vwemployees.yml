@@ -1,0 +1,18 @@
+unique_name: vwemployees
+object_type: dataset
+label: vwemployees
+columns:
+  - name: employeeid
+    data_type: int
+  - name: fullname
+    data_type: string
+  - name: firstname
+    data_type: string
+  - name: middlename
+    data_type: string
+  - name: lastname
+    data_type: string
+  - name: managerid
+    data_type: int
+connection_id: con_postgres_public
+table: vwemployees

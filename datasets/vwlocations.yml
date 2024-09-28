@@ -1,0 +1,22 @@
+unique_name: vwlocations
+object_type: dataset
+label: vwlocations
+columns:
+  - name: locationid
+    data_type: int
+  - name: addressline1
+    data_type: string
+  - name: addressline2
+    data_type: string
+  - name: city
+    data_type: string
+  - name: state
+    data_type: string
+  - name: country
+    data_type: string
+  - name: zip
+    data_type: string
+  - name: region
+    data_type: string
+connection_id: con_postgres_public
+table: vwlocations

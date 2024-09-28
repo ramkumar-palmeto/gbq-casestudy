@@ -1,0 +1,12 @@
+unique_name: vwproductsubcategories
+object_type: dataset
+label: vwproductsubcategories
+columns:
+  - name: productsubcategoryid
+    data_type: int
+  - name: productcategoryid
+    data_type: int
+  - name: productsubcategoryname
+    data_type: string
+connection_id: con_postgres_public
+table: vwproductsubcategories

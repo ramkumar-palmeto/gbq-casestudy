@@ -1,0 +1,10 @@
+unique_name: vwproductcategories
+object_type: dataset
+label: vwproductcategories
+columns:
+  - name: productcategoryid
+    data_type: int
+  - name: productcategoryname
+    data_type: string
+connection_id: con_postgres_public
+table: vwproductcategories
