@@ -58,4 +58,16 @@ level_attributes:
     key_columns:
       - customerid
     name_column: customerid
+relationships:
+  - unique_name: vwcustomers_locationid_to_geography_city
+    from:
+      dataset: vwcustomers
+      hierarchy: customers Hierarchy
+      join_columns:
+        - locationid
+      level: customertype
+    to:
+      dimension: geography
+      level: city
+    type: embedded
 type: standard
