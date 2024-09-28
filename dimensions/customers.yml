@@ -1,0 +1,61 @@
+unique_name: customers
+object_type: dimension
+label: Customers
+hierarchies:
+  - unique_name: customers Hierarchy
+    label: customers Hierarchy
+    levels:
+      - unique_name: customertype
+      - unique_name: customerstatus
+      - unique_name: Customer Name
+        secondary_attributes:
+          - unique_name: firstname
+            label: firstname
+            contains_unique_names: false
+            dataset: vwcustomers
+            is_unique_key: false
+            key_columns:
+              - firstname
+            name_column: firstname
+          - unique_name: middlename
+            label: middlename
+            contains_unique_names: false
+            dataset: vwcustomers
+            is_unique_key: false
+            key_columns:
+              - middlename
+            name_column: middlename
+          - unique_name: lastname
+            label: lastname
+            contains_unique_names: false
+            dataset: vwcustomers
+            is_unique_key: false
+            key_columns:
+              - lastname
+            name_column: lastname
+level_attributes:
+  - unique_name: customertype
+    label: Customer Type
+    contains_unique_names: false
+    dataset: vwcustomers
+    is_unique_key: false
+    key_columns:
+      - customertype
+    name_column: customertype
+  - unique_name: customerstatus
+    label: Customer Status
+    contains_unique_names: false
+    dataset: vwcustomers
+    is_unique_key: false
+    key_columns:
+      - customerstatus
+    name_column: customerstatus
+  - unique_name: Customer Name
+    label: Customer Name
+    contains_unique_names: false
+    dataset: vwcustomers
+    is_unique_key: false
+    key_columns:
+      - customerid
+    name_column: customerid
+type: standard

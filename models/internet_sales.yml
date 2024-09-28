@@ -14,4 +14,12 @@ metrics:
     folder: Order Metrics
   - unique_name: TotalTax
     folder: Order Metrics
-relationships: []
+relationships:
+  - unique_name: vwfactsales_customerid_to_customers_Customer Name
+    from:
+      dataset: vwfactsales
+      join_columns:
+        - customerid
+    to:
+      dimension: customers
+      level: Customer Name
