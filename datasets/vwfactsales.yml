@@ -25,8 +25,8 @@ columns:
   - name: Profit
     data_type: int
     sql: saleamount - productcost
-  - name: Profit Percentage
+  - name: Tax Amount
     data_type: decimal
-    sql: ((saleamount - productcost) / saleamount) * 100
+    sql: (saleamount - productcost) * 0.085
 connection_id: con_postgres_public
 table: vwfactsales

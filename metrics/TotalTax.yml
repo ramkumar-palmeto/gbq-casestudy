@@ -1,0 +1,7 @@
+unique_name: TotalTax
+object_type: metric
+label: Total Tax
+calculation_method: sum
+column: Tax Amount
+dataset: vwfactsales
+format: general number

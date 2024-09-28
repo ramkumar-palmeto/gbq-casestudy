@@ -1,0 +1,7 @@
+unique_name: Profit
+object_type: metric
+label: '% Profit'
+calculation_method: sum
+column: Profit
+dataset: vwfactsales
+format: general number

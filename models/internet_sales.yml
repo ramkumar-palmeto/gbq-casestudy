@@ -10,4 +10,8 @@ metrics:
     folder: Order Metrics
   - unique_name: AverageSaleAmount
     folder: Order Metrics
+  - unique_name: Profit
+    folder: Order Metrics
+  - unique_name: TotalTax
+    folder: Order Metrics
 relationships: []
