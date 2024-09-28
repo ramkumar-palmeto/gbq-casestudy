@@ -1,6 +1,0 @@
-unique_name: m_vwfactsales
-object_type: metric
-label: M Vwfact Sales
-calculation_method: sum
-column: colum name
-dataset: vwfactsales
