@@ -1,5 +1,0 @@
-unique_name: profit
-object_type: metric_calc
-label: profit
-expression: MDX expression
-is_hidden: false
