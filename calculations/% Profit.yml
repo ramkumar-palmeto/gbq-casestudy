@@ -1,0 +1,7 @@
+unique_name: '% Profit'
+object_type: metric_calc
+label: '% Profit'
+expression: '[Measures].Profit / [Measures].TotalSalesAmount'
+format: percent
+is_hidden: false
+mdx_aggregate_function: SUM
