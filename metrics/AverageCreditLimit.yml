@@ -1,0 +1,6 @@
+unique_name: AverageCreditLimit
+object_type: metric
+label: Average Credit Limit
+calculation_method: average
+column: creditlimit
+dataset: vwcustomers

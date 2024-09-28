@@ -1,0 +1,6 @@
+unique_name: DistinctCustomersCount
+object_type: metric
+label: Distinct Customers Count
+calculation_method: count distinct
+column: customerid
+dataset: vwcustomers
