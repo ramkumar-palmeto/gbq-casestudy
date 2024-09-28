@@ -1,0 +1,7 @@
+unique_name: AverageUnits
+object_type: metric
+label: Average Units
+calculation_method: average
+column: units
+dataset: vwfactsales
+format: general number

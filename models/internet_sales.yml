@@ -1,0 +1,13 @@
+unique_name: internet_sales
+object_type: model
+label: internet_sales
+metrics:
+  - unique_name: TotalSaleAmount
+    folder: Order Metrics
+  - unique_name: TotalUnits
+    folder: Order Metrics
+  - unique_name: AverageUnits
+    folder: Order Metrics
+  - unique_name: AverageSaleAmount
+    folder: Order Metrics
+relationships: []

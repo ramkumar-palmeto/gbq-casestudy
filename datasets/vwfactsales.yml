@@ -22,5 +22,11 @@ columns:
     data_type: int
   - name: productcost
     data_type: int
+  - name: Profit
+    data_type: int
+    sql: saleamount - productcost
+  - name: Profit Percentage
+    data_type: decimal
+    sql: ROUND((saleamount / (saleamount - productcost)) * 0.01, 0)
 connection_id: con_postgres_public
 table: vwfactsales

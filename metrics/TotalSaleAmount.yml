@@ -1,0 +1,7 @@
+unique_name: TotalSaleAmount
+object_type: metric
+label: Sale Amount
+calculation_method: sum
+column: saleamount
+dataset: vwfactsales
+format: general number

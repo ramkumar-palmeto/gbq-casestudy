@@ -1,0 +1,7 @@
+unique_name: AverageSaleAmount
+object_type: metric
+label: Average Sale Amount
+calculation_method: average
+column: saleamount
+dataset: vwfactsales
+format: general number
