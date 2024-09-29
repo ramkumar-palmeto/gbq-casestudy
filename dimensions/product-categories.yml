@@ -1,0 +1,18 @@
+unique_name: product-categories.yml
+object_type: dimension
+label: product-categories.yml
+hierarchies:
+  - unique_name: Product Categories
+    label: Product Categories
+    levels:
+      - unique_name: Category
+level_attributes:
+  - unique_name: Category
+    label: Category
+    contains_unique_names: false
+    dataset: vwproductcategories
+    is_unique_key: false
+    key_columns:
+      - productcategoryid
+    name_column: productcategoryname
+type: standard

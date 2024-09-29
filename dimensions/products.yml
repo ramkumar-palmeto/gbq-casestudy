@@ -64,4 +64,28 @@ level_attributes:
     key_columns:
       - productid
     name_column: productid
+relationships:
+  - unique_name: >-
+      vwproductsubcategories_productcategoryid_to_product-categories.yml_Category
+    from:
+      dataset: vwproductsubcategories
+      hierarchy: Products
+      join_columns:
+        - productcategoryid
+      level: Subcategory
+    to:
+      dimension: product-categories.yml
+      level: Category
+    type: embedded
+  - unique_name: vwproductcategories_productcategoryid_to_product-subcategories_Subcategory
+    from:
+      dataset: vwproductcategories
+      hierarchy: Products
+      join_columns:
+        - productcategoryid
+      level: Category
+    to:
+      dimension: product-subcategories
+      level: Subcategory
+    type: embedded
 type: standard
