@@ -64,6 +64,50 @@ level_attributes:
     key_columns:
       - productid
     name_column: name
-
-relationships: []
+relationships:
+  - unique_name: >-
+      vwproductsubcategories_productsubcategoryid_to_subcategories_productsubcategoryname
+    from:
+      dataset: vwproductsubcategories
+      hierarchy: Product Line
+      join_columns:
+        - productsubcategoryid
+      level: Subcategory
+    to:
+      dimension: subcategories
+      level: productsubcategoryname
+    type: embedded
+  - unique_name: vwproductcategories_productcategoryid_to_categories_productcategoryname
+    from:
+      dataset: vwproductcategories
+      hierarchy: Product Line
+      join_columns:
+        - productcategoryid
+      level: Product Category
+    to:
+      dimension: categories
+      level: productcategoryname
+    type: embedded
+  - unique_name: vwproducts_productsubcategoryid_to_subcategories_productsubcategoryname
+    from:
+      dataset: vwproducts
+      hierarchy: Color-Size
+      join_columns:
+        - productsubcategoryid
+      level: Color
+    to:
+      dimension: subcategories
+      level: productsubcategoryname
+    type: embedded
+  - unique_name: vwproductsubcategories_productcategoryid_to_categories_productcategoryname
+    from:
+      dataset: vwproductsubcategories
+      hierarchy: Product Line
+      join_columns:
+        - productcategoryid
+      level: Subcategory
+    to:
+      dimension: categories
+      level: productcategoryname
+    type: embedded
 type: standard

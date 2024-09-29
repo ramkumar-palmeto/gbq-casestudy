@@ -1,0 +1,18 @@
+unique_name: subcategories
+object_type: dimension
+label: subcategories
+hierarchies:
+  - unique_name: subcategories Hierarchy
+    label: subcategories Hierarchy
+    levels:
+      - unique_name: productsubcategoryname
+level_attributes:
+  - unique_name: productsubcategoryname
+    label: productsubcategoryname
+    contains_unique_names: false
+    dataset: vwproductsubcategories
+    is_unique_key: false
+    key_columns:
+      - productcategoryid
+    name_column: productsubcategoryname
+type: standard
