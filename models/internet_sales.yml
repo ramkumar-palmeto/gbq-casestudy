@@ -39,3 +39,11 @@ relationships:
     to:
       dimension: products
       level: Product
+  - unique_name: vwfactsales_saledate_to_time_Date
+    from:
+      dataset: vwfactsales
+      join_columns:
+        - saledate
+    to:
+      dimension: time
+      level: Date
