@@ -70,5 +70,19 @@ level_attributes:
     key_columns:
       - productid
     name_column: name
-relationships: []
+relationships:
+  - from:
+      dataset: vwproducts
+      join_columns:
+        - productsubcategoryid
+    to:
+      level: Subcategory
+    type: snowflake
+  - from:
+      dataset: vwproductsubcategories
+      join_columns:
+        - productcategoryid
+    to:
+      level: Category
+    type: snowflake
 type: standard
