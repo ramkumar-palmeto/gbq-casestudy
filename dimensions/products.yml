@@ -5,7 +5,7 @@ hierarchies:
   - unique_name: Products
     label: Products
     levels:
-      - unique_name: ProductCategory
+      - unique_name: Product Category
       - unique_name: ProductSubcategory
       - unique_name: Product
   - unique_name: Color-Size
@@ -15,14 +15,6 @@ hierarchies:
       - unique_name: Size
       - unique_name: Product ID
 level_attributes:
-  - unique_name: ProductCategory
-    label: Category
-    contains_unique_names: false
-    dataset: vwproductcategories
-    is_unique_key: false
-    key_columns:
-      - productcategoryid
-    name_column: productcategoryname
   - unique_name: ProductSubcategory
     label: Subcategory
     contains_unique_names: false
@@ -64,6 +56,14 @@ level_attributes:
     key_columns:
       - productid
     name_column: productid
+  - unique_name: Product Category
+    label: Product Category
+    contains_unique_names: false
+    dataset: vwproductcategories
+    is_unique_key: false
+    key_columns:
+      - productcategoryid
+    name_column: productcategoryname
 relationships:
   - unique_name: >-
       vwproductsubcategories_productcategoryid_to_product-categories.yml_Category
@@ -77,15 +77,26 @@ relationships:
       dimension: product-categories.yml
       level: Category
     type: embedded
-  - unique_name: vwproductcategories_productcategoryid_to_product-subcategories_Subcategory
+  - unique_name: vwproducts_productsubcategoryid_to_product-subcategories_Subcategory
+    from:
+      dataset: vwproducts
+      hierarchy: Products
+      join_columns:
+        - productsubcategoryid
+      level: Product
+    to:
+      dimension: product-subcategories
+      level: Subcategory
+    type: embedded
+  - unique_name: vwproductcategories_productcategoryid_to_product-categories.yml_Category
     from:
       dataset: vwproductcategories
       hierarchy: Products
       join_columns:
         - productcategoryid
-      level: Category
+      level: Product Category
     to:
-      dimension: product-subcategories
-      level: Subcategory
+      dimension: product-categories.yml
+      level: Category
     type: embedded
 type: standard
