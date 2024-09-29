@@ -1,6 +1,6 @@
 version: 1
 packages:
-  - version: commit:1bab506d318155043e610e5fb3379bde2b93aa35
+  - version: commit:65d16a368a9dcf72bd2bc77428666bb6ccb884c1
     name: model-reuse
     url: https://github.com/ramkumar-palmeto/model-reuse
     branch: main
