@@ -1,0 +1,10 @@
+unique_name: SalesGrowth-YOY
+object_type: metric_calc
+label: New Calculation
+expression: |-
+  ([time2].[Time].CurrentMember, [Measures].[TotalSaleAmount])
+  -
+  [Measures].PreviousYear-YOY
+format: $#,##0.00
+is_hidden: false
+mdx_aggregate_function: SUM

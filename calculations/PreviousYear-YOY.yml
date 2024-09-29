@@ -1,0 +1,13 @@
+unique_name: PreviousYear-YOY
+object_type: metric_calc
+label: SalesGrowth-YOY
+expression: |-
+  (ParallelPeriod(
+     [time2].[Time].[Year],
+     1,
+     [time2].[Time].CurrentMember),
+     [Measures].[TotalSaleAmount]
+     )
+format: $#,##0.00
+is_hidden: false
+mdx_aggregate_function: SUM
