@@ -5,8 +5,8 @@ hierarchies:
   - unique_name: Products
     label: Products
     levels:
-      - unique_name: Category
-      - unique_name: Subcategory
+      - unique_name: ProductCategory
+      - unique_name: ProductSubcategory
       - unique_name: Product
   - unique_name: Color-Size
     label: Color-Size
@@ -15,7 +15,7 @@ hierarchies:
       - unique_name: Size
       - unique_name: Product ID
 level_attributes:
-  - unique_name: Category
+  - unique_name: ProductCategory
     label: Category
     contains_unique_names: false
     dataset: vwproductcategories
@@ -23,7 +23,7 @@ level_attributes:
     key_columns:
       - productcategoryid
     name_column: productcategoryname
-  - unique_name: Subcategory
+  - unique_name: ProductSubcategory
     label: Subcategory
     contains_unique_names: false
     dataset: vwproductsubcategories
