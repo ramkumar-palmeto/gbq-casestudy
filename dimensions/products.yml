@@ -1,0 +1,91 @@
+unique_name: products
+object_type: dimension
+label: products
+hierarchies:
+  - unique_name: Products
+    label: Products
+    levels:
+      - unique_name: Category
+      - unique_name: Subcategory
+      - unique_name: Product
+  - unique_name: Color-Size
+    label: Color-Size
+    levels:
+      - unique_name: Color
+      - unique_name: Size
+      - unique_name: Product ID
+level_attributes:
+  - unique_name: Category
+    label: Category
+    contains_unique_names: false
+    dataset: vwproductcategories
+    is_unique_key: false
+    key_columns:
+      - productcategoryid
+    name_column: productcategoryname
+  - unique_name: Subcategory
+    label: Subcategory
+    contains_unique_names: false
+    dataset: vwproductsubcategories
+    is_unique_key: false
+    key_columns:
+      - productsubcategoryid
+    name_column: productsubcategoryname
+  - unique_name: Product
+    label: Product
+    contains_unique_names: false
+    dataset: vwproducts
+    is_unique_key: false
+    key_columns:
+      - productid
+    name_column: name
+  - unique_name: Color
+    label: Color
+    contains_unique_names: false
+    dataset: vwproducts
+    is_unique_key: false
+    key_columns:
+      - color
+    name_column: color
+  - unique_name: Size
+    label: Size
+    contains_unique_names: false
+    dataset: vwproducts
+    is_unique_key: false
+    key_columns:
+      - size
+    name_column: size
+  - unique_name: Product ID
+    label: Product ID
+    contains_unique_names: false
+    dataset: vwproducts
+    is_hidden: true
+    is_unique_key: false
+    key_columns:
+      - productid
+    name_column: productid
+  - unique_name: vwproducts_empty_attr
+    label: vwproducts_empty_attr
+    contains_unique_names: false
+    dataset: vwproducts
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+  - unique_name: vwproductsubcategories_empty_attr
+    label: vwproductsubcategories_empty_attr
+    contains_unique_names: false
+    dataset: vwproductsubcategories
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+  - unique_name: vwproductcategories_empty_attr
+    label: vwproductcategories_empty_attr
+    contains_unique_names: false
+    dataset: vwproductcategories
+    is_hidden: true
+    is_unique_key: false
+    key_columns: []
+    name_column: ''
+type: standard
