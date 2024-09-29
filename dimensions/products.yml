@@ -64,28 +64,4 @@ level_attributes:
     key_columns:
       - productid
     name_column: productid
-  - unique_name: vwproducts_empty_attr
-    label: vwproducts_empty_attr
-    contains_unique_names: false
-    dataset: vwproducts
-    is_hidden: true
-    is_unique_key: false
-    key_columns: []
-    name_column: ''
-  - unique_name: vwproductsubcategories_empty_attr
-    label: vwproductsubcategories_empty_attr
-    contains_unique_names: false
-    dataset: vwproductsubcategories
-    is_hidden: true
-    is_unique_key: false
-    key_columns: []
-    name_column: ''
-  - unique_name: vwproductcategories_empty_attr
-    label: vwproductcategories_empty_attr
-    contains_unique_names: false
-    dataset: vwproductcategories
-    is_hidden: true
-    is_unique_key: false
-    key_columns: []
-    name_column: ''
 type: standard
