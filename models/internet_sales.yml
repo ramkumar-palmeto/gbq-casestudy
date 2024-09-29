@@ -31,11 +31,4 @@ relationships:
     to:
       dimension: products
       level: Product ID
-  - unique_name: vwfactsales_productid_to_products_Product
-    from:
-      dataset: vwfactsales
-      join_columns:
-        - productid
-    to:
-      dimension: products
-      level: Product
+
